@@ -80,3 +80,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+try:
+    from local_settings import *
+    #print 'local settings loaded'
+except ImportError as e:
+    print  e
+    print 'local settings NOT loaded'

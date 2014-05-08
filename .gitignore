@@ -61,3 +61,5 @@ docs/_build/
 *.psd
 *.gz
 logs/
+local_settings.py
+local_urls.py

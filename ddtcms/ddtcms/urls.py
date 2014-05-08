@@ -10,3 +10,9 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
 )
+try:
+    from local_urls import *
+    #print 'local urls loaded'
+except ImportError as e:
+    print  e
+    print 'local urls NOT loaded'
